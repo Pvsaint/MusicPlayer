@@ -11,6 +11,8 @@ let auto_play = document.querySelector('#auto');
 let present = document.querySelector('#present');
 let total = document.querySelector('#total');
 let artist = document.querySelector('#artist');
+let icon = document.querySelector('.dark_theme');
+let main = document.querySelector('.main');
 
 
 let timer;
@@ -27,19 +29,19 @@ let all_song = [
     {
         name: "common person",
         path: "music/song1.mp3",
-        img: "images/img1.JPEG",
+        img: "images/img1.jpg",
         singer: "burna boy"
     },
     {
         name: "bigger",
         path: "music/song2.mp3",
-        img: "images/img2.JPEG",
+        img: "images/img2.jpg",
         singer: "M.I ft NAS & Olamide"
     },
     {
         name: "remote",
         path: "music/song3.mp3",
-        img: "images/img3.JPEG",
+        img: "images/img3.jpg",
         singer: "kanye west"
     },
     {
@@ -51,10 +53,25 @@ let all_song = [
     {
         name: "terminator",
         path: "music/song5.mp3",
-        img: "images/img5.JPEG",
+        img: "images/img5.jpg",
         singer: "asake"
+    },
+    {
+        name: "ocean",
+        path: "music/song6.mp3",
+        img: "images/img6.jpg",
+        singer: "asa"
     }
 ];
+
+icon.addEventListener('click', function(){
+    main.style.background = ('gray');
+    if (main.style.background = ('gray')){
+        icon.innerHTML = '<i class="fa fa-moon" aria-hidden="true"></i>';
+    }else {
+        icon.innerHTML = '<i class="fa fa-sun" aria-hidden="true"></i>'
+    }
+})
 
 // All funtion
 

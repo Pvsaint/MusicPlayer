@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   background: #232323;
-  overflow-block: hidden;
+  overflow: hidden;
 }
 
 .main {
@@ -52,6 +52,16 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.main .left .dark_theme {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  font-size: 25px;
+  color: #fff;
+  transition: all 0.3s;
 }
 .main .left img {
   position: absolute;
@@ -207,7 +217,7 @@ body {
   cursor: pointer;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .main {
     height: 100vh;
     width: 100vw;
